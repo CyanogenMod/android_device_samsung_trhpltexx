@@ -11,4 +11,4 @@ BOARD_MODEM_TYPE := xmm7260
 TARGET_OTA_ASSERT_DEVICE := trhplte,trhpltexx,treltexx
 
 # Inherit common board flags
-include device/samsung/treltexx/BoardConfigCommon.mk
+include device/samsung/trelte-common/BoardConfigCommon.mk
