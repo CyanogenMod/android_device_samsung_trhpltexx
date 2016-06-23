@@ -1,3 +1,6 @@
 ### Bluetooth
 vendor/firmware/bcm4358A0_V0033.0000.hcd
 vendor/firmware/bcm4358A1_V0054.0095.hcd
+
+### RIL
+bin/cbd
