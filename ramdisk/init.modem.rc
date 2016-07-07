@@ -23,7 +23,7 @@ service modemloader /system/bin/modemloader
     class core
     oneshot
 
-service cpboot-daemon /system/bin/cbd -d -t xmm72xx_lli -b l -m l -p 13
+service cpboot-daemon /sbin/cbd -d -t xmm72xx_lli -b l -m l -p 13
     class main
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw log shell
