@@ -713,6 +713,32 @@
         <ctl name="AIF3TX2 Input 2" value="ASRC2R" />
     </path>
 
+    <path name="scenario-sco-carkit-incall-nb">
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 2" />
+        <ctl name="Sample Rate 3" value="16kHz" />
+        <ctl name="ISRC1DEC1 Input" value="AIF1RX1" />
+        <ctl name="ISRC1DEC2 Input" value="AIF1RX2" />
+        <ctl name="ASRC2L Input" value="AIF2RX1" />
+        <ctl name="ASRC2R Input" value="AIF2RX2" />
+        <ctl name="AIF3TX1 Input 1" value="ISRC1DEC1" />
+        <ctl name="AIF3TX2 Input 1" value="ISRC1DEC2" />
+        <ctl name="AIF3TX1 Input 2" value="ASRC2L" />
+        <ctl name="AIF3TX2 Input 2" value="ASRC2R" />
+    </path>
+
+    <path name="scenario-sco-carkit-incall-wb">
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 2" />
+        <ctl name="Sample Rate 3" value="16kHz" />
+        <ctl name="ISRC1DEC1 Input" value="AIF1RX1" />
+        <ctl name="ISRC1DEC2 Input" value="AIF1RX2" />
+        <ctl name="ASRC2L Input" value="AIF2RX1" />
+        <ctl name="ASRC2R Input" value="AIF2RX2" />
+        <ctl name="AIF3TX1 Input 1" value="ISRC1DEC1" />
+        <ctl name="AIF3TX2 Input 1" value="ISRC1DEC2" />
+        <ctl name="AIF3TX1 Input 2" value="ASRC2L" />
+        <ctl name="AIF3TX2 Input 2" value="ASRC2R" />
+    </path>
+
     <!-- ### Volume ### -->
 
     <path name="volume-sco-carkit-default">
@@ -830,6 +856,22 @@
         <ctl name="LHPF2 Input 1" value="IN1R" />
         <ctl name="ASRC1L Input" value="LHPF2" />
         <ctl name="ASRC1R Input" value="LHPF2" />
+        <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
+        <ctl name="AIF2TX2 Input 1" value="ASRC1R" />
+    </path>
+
+    <path name="scenario-builtin-mic-speaker-camcorder">
+        <ctl name="DSP3 Aux 1" value="None" />
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 3" />
+        <ctl name="AIF1TX1 Input 3" value="None" />
+        <ctl name="AIF1TX2 Input 3" value="None" />
+        <ctl name="HPOUT3L Input 2" value="None" />
+        <ctl name="HPOUT3R Input 2" value="None" />	<!-- STMR -->
+        <ctl name="EQ1 Input 1" value="None" />
+        <ctl name="LHPF2 Input 1" value="IN1R" />
+        <ctl name="ISRC2DEC1 Input" value="LHPF2" />
+        <ctl name="ASRC1L Input" value="ISRC2DEC1" />
+        <ctl name="ASRC1R Input" value="ISRC2DEC1" />
         <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
         <ctl name="AIF2TX2 Input 1" value="ASRC1R" />
     </path>
@@ -1006,6 +1048,42 @@
         <ctl name="AIF2TX2 Input 1" value="ASRC1R" />
     </path>
 
+    <path name="scenario-back-mic-communication-earpiece">
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
+        <ctl name="AIF1TX1 Input 3" value="None" />
+        <ctl name="AIF1TX2 Input 3" value="None" />
+        <ctl name="EQ2 Input 1" value="None" />
+        <ctl name="LHPF2 Input 1" value="IN3L" />
+        <ctl name="ASRC1L Input" value="LHPF2" />
+        <ctl name="ASRC1R Input" value="LHPF2" />
+        <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
+        <ctl name="AIF2TX2 Input 1" value="ASRC1R" />
+    </path>
+
+    <path name="scenario-back-mic-communication-speaker">
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
+        <ctl name="AIF1TX1 Input 3" value="None" />
+        <ctl name="AIF1TX2 Input 3" value="None" />
+        <ctl name="EQ2 Input 1" value="None" />
+        <ctl name="LHPF1 Input 1" value="IN3L" />
+        <ctl name="ASRC1L Input" value="LHPF1" />
+        <ctl name="ASRC1R Input" value="LHPF1" />
+        <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
+        <ctl name="IF2TX2 Input 1" value="ASRC1R" />
+    </path>
+
+    <path name="scenario-back-mic-camcorder">
+        <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
+        <ctl name="AIF1TX1 Input 3" value="None" />
+        <ctl name="AIF1TX2 Input 3" value="None" />
+        <ctl name="EQ2 Input 1" value="None" />
+        <ctl name="LHPF1 Input 1" value="IN3L" />
+        <ctl name="ASRC1L Input" value="LHPF1" />
+        <ctl name="ASRC1R Input" value="LHPF1" />
+        <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
+        <ctl name="AIF2TX2 Input 1" value="ASRC1R" />
+    </path>
+
     <path name="scenario-back-mic-earpiece-incall-nb">
         <ctl name="EQ2 Input 1" value="IN3L" />
         <ctl name="ISRC1DEC2 Input" value="EQ2" />
@@ -1021,6 +1099,7 @@
     <path name="scenario-back-mic-speaker-incall-nb">
         <ctl name="EQ2 Input 1" value="IN3L" />
         <ctl name="ISRC1DEC2 Input" value="EQ2" />
+	<ctl name="ISRC2DEC2 Input" value="EQ2" />  <!-- To set DSP4 Aux 2 -->
         <ctl name="DSP3L Input 1" value="ISRC1DEC2" />
     </path>
 
@@ -1029,6 +1108,7 @@
         <ctl name="ISRC2DEC2 Input" value="EQ2" />
         <ctl name="DSP3L Input 1" value="ISRC2DEC2" />
     </path>
+
 
     <!-- ### Volume ### -->
 
@@ -1129,6 +1209,30 @@
         <ctl name="ASRC1R Input" value="LHPF2" />
         <ctl name="AIF2TX1 Input 1" value="ASRC1L" />
         <ctl name="AIF2TX2 Input 1" value="ASRC1R" />
+    </path>
+
+    <path name="scenario-third-mic-earpiece-incall-nb">
+        <ctl name="EQ3 Input 1" value="IN3R" />
+        <ctl name="ISRC1DEC3 Input" value="EQ3" />
+        <ctl name="DSP3R Input 1" value="ISRC1DEC3" />
+    </path>
+
+    <path name="scenario-third-mic-speaker-incall-nb">
+        <ctl name="EQ3 Input 1" value="IN3R" />
+        <ctl name="ISRC1DEC3 Input" value="EQ3" />
+        <ctl name="DSP3 Aux 2" value="ISRC1DEC3" />
+    </path>
+
+    <path name="scenario-third-mic-earpiece-incall-wb">
+        <ctl name="EQ3 Input 1" value="IN3R" />
+        <ctl name="ISRC2DEC3 Input" value="EQ3" />
+        <ctl name="DSP3R Input 1" value="ISRC2DEC3" />
+    </path>
+
+    <path name="scenario-third-mic-speaker-incall-wb">
+        <ctl name="EQ3 Input 1" value="IN3R" />
+        <ctl name="ISRC2DEC3 Input" value="EQ3" />
+        <ctl name="DSP3 Aux 2" value="ISRC2DEC3" />
     </path>
 
     <!-- ### Volume ### -->
@@ -1294,6 +1398,10 @@
         <ctl name="HPOUT1R Input 2" value="None" />
     </path>
 
+    <path name="verb-communication">
+        <ctl name="AIF2 Mode" value="Master" />
+    </path>
+
     <path name="verb-incall">
         <ctl name="AIF2 Mode" value="Slave" />
         <ctl name="DSP Virtual Output Mux" value="None" />
@@ -1322,6 +1430,19 @@
         <ctl name="HPOUT1L Input 2" value="ASRC2L" />
         <ctl name="HPOUT1R Input 2" value="ASRC2R" />
         -->
+    </path>
+
+    <path name="verb-loopback">
+        <ctl name="AIF2 Mode" value="Slave" />
+        <ctl name="VI SENSING SWITCH" value="0" />
+        <ctl name="HPOUT3L Input 3" value="ASRC2L" />
+
+         <!-- CP->SPK -->
+        <ctl name="HPOUT2L Input 3" value="ASRC2L" />
+
+         <!-- CP->HP -->
+        <ctl name="HPOUT1L Input 2" value="ASRC2L" />
+        <ctl name="HPOUT1R Input 2" value="ASRC2R" />
     </path>
 
     <!--
